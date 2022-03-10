@@ -1,0 +1,33 @@
+@import '../../styles/settings.scss';
+
+.container {
+  height: 50px;
+  width: 100%;
+  background-color: #292e39;
+  color: $color-light;
+  font-family: $font-text;
+  display: flex;
+  justify-content: space-between;
+}
+.icon { 
+  height: 30px;
+  width: 30px;
+  margin: 10px 10px;
+}
+a {
+  text-decoration: none;
+  color: $color-light;
+  font-size: 30px;
+}
+ul{
+  list-style: none;
+  text-decoration: none; 
+  
+}
+li {
+  display: inline-block;
+  margin: 0 20px;
+  a {
+    font-size: 20px;
+  }
+}
