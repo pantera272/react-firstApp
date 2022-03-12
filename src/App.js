@@ -5,6 +5,7 @@ import About from './components/About/About';
 import Favorites from './components/Favorites/Favorites';
 import { Routes, Route } from 'react-router-dom';
 import NotFoundPage from './components/NotFoundPage/NotFoundPage'
+import List from './components/List/List';
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/favorite" element={<Favorites />} />
+            <Route path="/list/:listId" element={<List />} />
             <Route path="*" element={<NotFoundPage />} />
           </Routes>
       </Container>

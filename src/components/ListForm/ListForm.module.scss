@@ -1,0 +1,22 @@
+.columnForm {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+
+  label {
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .columnForm{
+    input {
+    width: 100%;
+    margin: 10px 0;
+    }
+    label {
+      padding: 10px;
+    }
+  }
+}
+
