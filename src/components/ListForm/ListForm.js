@@ -3,7 +3,7 @@ import TextInput from '../TextInput/TextInput';
 import Button from '../Button/Button';
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { addList } from '../../redux/store';
+import { addList } from '../../redux/listsReducer';
 
 const ListForm = () => {
 
@@ -13,7 +13,7 @@ const ListForm = () => {
 
   const handleSubmit = e => {
     e.preventDefault();
-    dispatch(addList({title, description}));
+    dispatch(addList({title: title, descryption: description}));
     setTitle('');
     setDescription('');
   }
@@ -24,7 +24,7 @@ const ListForm = () => {
       <TextInput id="title" type="text" value={title} onChange={e => setTitle(e.target.value)} />
       <label htmlFor="icon">Description:</label>
       <TextInput id="icon" type="text" value={description} onChange={e => setDescription(e.target.value)} />
-      <Button>Add column</Button>
+      <Button>Add List</Button>
     </form>
   )
 }

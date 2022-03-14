@@ -1,13 +1,13 @@
 import styles from './Favorites.module.scss';
 import { useSelector } from "react-redux";
-import { getFavoriteCard } from "../../redux/store";
+import { getFavoriteCard } from "../../redux/cardsReducer";
 import PageTitle from "../PageTitle/PageTitle";
 import Card from "../Card/Card";
 
 const Favorites = () => {
 
   const cards = useSelector(getFavoriteCard);
-  console.log(cards);
+
   return (
     <div className={styles.container}>
       <PageTitle>Favorites</PageTitle>
